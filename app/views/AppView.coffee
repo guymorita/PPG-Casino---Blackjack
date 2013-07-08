@@ -19,9 +19,9 @@ class window.AppView extends Backbone.View
     <section class="padding bck dark">
       <div class="row text center book margin-bottom" id="hit_stand_buttons">
         <div class="column_10 offset_1">
-          <h1 class="color theme">Place Your Bets</h1>
+          <h1 class="color theme">Set Your Bet</h1>
           <div></div>
-          <button class="hit-button alert">Hit</button> <button class="stand-button alert">Stand</button>
+
             </br>
             </br>
           <div class="chip-container"></div>
@@ -49,6 +49,8 @@ class window.AppView extends Backbone.View
   renderCards: ->
     @$('.player-hand-container span ul').html new HandView(collection: @model.get 'playerHand').el
     @$('.dealer-hand-container span ul').html new HandView(collection: @model.get 'dealerHand').el
-    # @$('#hit_stand_buttons div div').html ('')
+    @$('#hit_stand_buttons div div').first().html ('<button class="hit-button alert">Hit</button> <button class="stand-button alert">Stand</button>')
+    debugger
+    @$('.chip-container').children().children().first().html ('')
 
 

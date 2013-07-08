@@ -3,7 +3,9 @@ class window.ChipView extends Backbone.View
   className: 'chips'
 
   #todo: switch to mustache
-  template: _.template '<button class="bet-1">Bet 1</button>
+  template: _.template '
+    <div>
+    <button class="bet-1">Bet 1</button>
     <button class="bet-5">Bet 5</button>
     <button class="bet-10">Bet 10</button>
     <button class="bet-25">Bet 25</button>
@@ -12,6 +14,7 @@ class window.ChipView extends Backbone.View
     <button class="clear">Clear Bet</button>
     <button class="all-in">All-in</button>
     <button class="set_bet success" style="margin: 0px 0px 0px 20px">Set Bet</button>
+    </div>
     </br>
     <div class="stack"><h3><strong>Stack: <strong></h3></div>
     </br>

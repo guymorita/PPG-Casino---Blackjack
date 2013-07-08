@@ -31,9 +31,9 @@
     <section class="padding bck dark">\
       <div class="row text center book margin-bottom" id="hit_stand_buttons">\
         <div class="column_10 offset_1">\
-          <h1 class="color theme">Place Your Bets</h1>\
+          <h1 class="color theme">Set Your Bet</h1>\
           <div></div>\
-          <button class="hit-button alert">Hit</button> <button class="stand-button alert">Stand</button>\
+\
             </br>\
             </br>\
           <div class="chip-container"></div>\
@@ -72,9 +72,12 @@
       this.$('.player-hand-container span ul').html(new HandView({
         collection: this.model.get('playerHand')
       }).el);
-      return this.$('.dealer-hand-container span ul').html(new HandView({
+      this.$('.dealer-hand-container span ul').html(new HandView({
         collection: this.model.get('dealerHand')
       }).el);
+      this.$('#hit_stand_buttons div div').first().html('<button class="hit-button alert">Hit</button> <button class="stand-button alert">Stand</button>');
+      debugger;
+      return this.$('.chip-container').children().children().first().html('');
     };
 
     return AppView;

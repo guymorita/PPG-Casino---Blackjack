@@ -15,7 +15,6 @@ class window.App extends Backbone.Model
     #   @set 'masterSetBet', true
     @set 'playerHand', deck.dealPlayer()
     @set 'dealerHand', deck.dealDealer()
-    debugger
     @get('playerHand').on 'playerHit', =>
       if @get('playerHand').scores()[0] > 21
         @endGame()

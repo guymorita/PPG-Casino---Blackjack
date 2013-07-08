@@ -25,7 +25,6 @@
       this.set('deck', deck = new Deck());
       this.set('playerHand', deck.dealPlayer());
       this.set('dealerHand', deck.dealDealer());
-      debugger;
       this.get('playerHand').on('playerHit', function() {
         if (_this.get('playerHand').scores()[0] > 21) {
           return _this.endGame();
