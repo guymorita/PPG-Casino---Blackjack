@@ -31,7 +31,7 @@
     <section class="padding bck dark">\
       <div class="row text center book margin-bottom" id="hit_stand_buttons">\
         <div class="column_10 offset_1">\
-          <h1 class="color theme">Set Your Bet</h1>\
+          <h1 class="color theme">Place your bets</h1>\
           <div></div>\
 \
             </br>\
