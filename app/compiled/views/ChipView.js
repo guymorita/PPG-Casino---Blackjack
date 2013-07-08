@@ -68,6 +68,7 @@
         return this.trigger('bet');
       },
       "click .all-in": function() {
+        this.currentBet = 0;
         this.attemptBet(this.currentStack);
         return this.trigger('bet');
       }

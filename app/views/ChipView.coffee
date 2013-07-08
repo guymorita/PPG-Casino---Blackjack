@@ -48,6 +48,7 @@ class window.ChipView extends Backbone.View
       @currentBet = 0
       @trigger 'bet'
     "click .all-in": ->
+      @currentBet = 0
       @attemptBet(@currentStack)
       @trigger 'bet'
   attemptBet: (amount) ->

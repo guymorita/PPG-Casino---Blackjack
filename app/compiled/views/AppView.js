@@ -48,6 +48,9 @@
       },
       "click .stand-button": function() {
         return this.model.get('playerHand').stand();
+      },
+      "click .double-button": function() {
+        return this.model.get('playerHand').double();
       }
     };
 
@@ -75,7 +78,7 @@
       this.$('.dealer-hand-container span ul').html(new HandView({
         collection: this.model.get('dealerHand')
       }).el);
-      this.$('#hit_stand_buttons div div').first().html('<button class="hit-button alert">Hit</button> <button class="stand-button alert">Stand</button>');
+      this.$('#hit_stand_buttons div div').first().html('<button class="hit-button alert">Hit</button> <button class="stand-button alert">Stand</button> <button class="double-button alert">Double Down</button>');
       debugger;
       return this.$('.chip-container').children().children().first().html('');
     };

@@ -15,6 +15,13 @@ class window.App extends Backbone.Model
     #   @set 'masterSetBet', true
     @set 'playerHand', deck.dealPlayer()
     @set 'dealerHand', deck.dealDealer()
+    @get('playerHand').on 'playerDouble', =>
+      if @get('stack').get('curBet')*2 <= @get('stack').get('chipStack')
+        @get('playerHand').hit()
+        @get('stack').set('curBet', @get('stack').get('curBet')*2)
+        @endGame()
+      else
+        alert "You don't have enough chips to double down"
     @get('playerHand').on 'playerHit', =>
       if @get('playerHand').scores()[0] > 21
         @endGame()

@@ -29,6 +29,10 @@
       return this.trigger("playerStand", this);
     };
 
+    Hand.prototype.double = function() {
+      return this.trigger("playerDouble", this);
+    };
+
     Hand.prototype.scores = function() {
       var hasAce, score;
       hasAce = this.reduce(function(memo, card) {

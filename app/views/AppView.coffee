@@ -33,6 +33,7 @@ class window.AppView extends Backbone.View
   events:
     "click .hit-button": -> @model.get('playerHand').hit()
     "click .stand-button": -> @model.get('playerHand').stand()
+    "click .double-button": -> @model.get('playerHand').double()
 
   initialize: ->
     @model.on 'change', @render, @
@@ -49,7 +50,7 @@ class window.AppView extends Backbone.View
   renderCards: ->
     @$('.player-hand-container span ul').html new HandView(collection: @model.get 'playerHand').el
     @$('.dealer-hand-container span ul').html new HandView(collection: @model.get 'dealerHand').el
-    @$('#hit_stand_buttons div div').first().html ('<button class="hit-button alert">Hit</button> <button class="stand-button alert">Stand</button>')
+    @$('#hit_stand_buttons div div').first().html ('<button class="hit-button alert">Hit</button> <button class="stand-button alert">Stand</button> <button class="double-button alert">Double Down</button>')
     debugger
     @$('.chip-container').children().children().first().html ('')
 

@@ -25,6 +25,15 @@
       this.set('deck', deck = new Deck());
       this.set('playerHand', deck.dealPlayer());
       this.set('dealerHand', deck.dealDealer());
+      this.get('playerHand').on('playerDouble', function() {
+        if (_this.get('stack').get('curBet') * 2 <= _this.get('stack').get('chipStack')) {
+          _this.get('playerHand').hit();
+          _this.get('stack').set('curBet', _this.get('stack').get('curBet') * 2);
+          return _this.endGame();
+        } else {
+          return alert("You don't have enough chips to double down");
+        }
+      });
       this.get('playerHand').on('playerHit', function() {
         if (_this.get('playerHand').scores()[0] > 21) {
           return _this.endGame();
