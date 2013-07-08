@@ -1,0 +1,32 @@
+Bugs to fix:
+
+x No stand method -> hand model
+x Create dealer logic
+
+x seperate game over and stand functionality
+
+x You should not be able to draw past busting
+x Round doesn't/can't end
+x King of spades
+x Some facecards lack a suit
+- No design on cards
+- You can see dealer's down card if you highlight it
+
+Possible features to add:
+x pull chipstack from View.
+x Calculate that against the app.model
+x Betting
+x- Create a new chip model
+x- Create a new chip view
+- Multiple hands
+- Doubling down
+- Splitting
+- Same deck - for card counting practice
+- Random levels with bad photoshopping
+- Chip sounds / Card sounds
+- Visual embellishments
+
+- Fix it so that you can't bet before you see your cards
+
+- Add an animation for when the cards first arrive
+-

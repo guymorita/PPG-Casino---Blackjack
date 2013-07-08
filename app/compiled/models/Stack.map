@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "Stack.js",
+  "sourceRoot": "../..",
+  "sources": [
+    "models/Stack.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA,GAAA,EAAA;KAAA;oSAAA;;CAAA,CAAM,IAAM;CAEV;;;;;CAAA;;CAAA,EAAY,MAAA,CAAZ;CACE,CAAkB,CAAlB,CAAC,EAAD,KAAA;CAAA,CACe,CAAf,CAAC,EAAD,EAAA;CACC,CAAc,CAAf,CAAC,CAAD,GAAA,KAAA;CAHF,IAAY;;CAAZ;;CAFyB,OAAQ;CAAnC"
+}
