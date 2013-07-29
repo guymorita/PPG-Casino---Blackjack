@@ -1,3 +1,1 @@
-# blackjack
-
-Copyright 2013, [Hack Reactor, LLC](http://hackreactor.com). All rights reserved.
+Blackjack. Base code from Hack Reactor. Design and features from me.
